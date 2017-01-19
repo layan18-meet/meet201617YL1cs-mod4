@@ -13,7 +13,7 @@ class Square(Rectangle) :
     def draw_shape(self):
         self.turtle.clear() #Remove old drawings (if they exist)
         self.turtle.penup()
-        self.turtle.goto(0,0)
+        self.turtle.goto(start_x,start_y)
         self.turtle.pendown()
         self.turtle.goto(self.length,0)
         self.turtle.goto(self.length,self.height)
@@ -21,4 +21,7 @@ class Square(Rectangle) :
         self.turtle.goto(0,0)
         self.turtle.penup()
         self.has_been_drawn=True
+    def set_start(self,start_x,start_y):
+        print("What is the x Start Point?")
+        start_x=
 
